@@ -4,8 +4,7 @@
     font-weight: bold;
 }
 
-/*----------------------BODY------------------------*/
-
+/*---------------------------------------------BODY--------------------------------------------*/
 body {
     background-image: url(https://duki.com.ar/wp-content/uploads/2022/03/DUKI_YST_1920x1080.jpg);
     background-position: center;
@@ -13,11 +12,9 @@ body {
 }
 
 
-/* HEADER */
-
-
-.enlaces1{
-    grid-area: nav;
+/* -----------HEADER---------- */
+.navHeader {
+    background: linear-gradient(to right, rgb(32, 32, 148), rgb(57, 57, 85));
 }
 
 .tituloPrincipal {
@@ -51,7 +48,7 @@ body {
 }
 
 
-/*MAIN*/
+/*---------MAIN-----------*/
 h1 {
     display: flex;
     flex-direction: column;
@@ -62,7 +59,9 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
-
+.div2I {
+    grid-area: div2I;
+}
 .subInicio {
     color: rgb(214, 71, 71);
     margin-left: 4.6875rem;
@@ -76,6 +75,8 @@ h2 {
 }
 .parrafoInicio {
     color: bisque;
+    grid-area: parrafoInicio;
+    margin-left: 2rem;
 }
 .parrafoContacto{
     background-color: bisque;
@@ -84,13 +85,23 @@ h2 {
     color: aqua;
 }
 .dukiVideo {
-    margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 .formulario {
     color: antiquewhite;
 }
+.gridPadreInicio {
+    display: grid;
+    grid-template-areas: 
+    "div2I parrafoInicio";
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
 
-/* FOOTER */
+/* ------FOOTER------- */
 .navFooter {
     display: flex;
     align-items: center;
@@ -140,7 +151,7 @@ footer {
     width: 9.4rem;
 }
 
-/* ------------------IMAGENES------------------- */
+/* ---------------------------------------IMAGENES-------------------------------------- */
 .imgInicio {
     grid-area: imgI;
     align-items: center;
@@ -156,5 +167,19 @@ img {
 }
 
 
-/* -----------------MEDIA----------------------- */
+/* -------------------------------------------MEDIA--------------------------------------- */
 
+@media (min-width: 350px) and (max-width:1024px) {
+    html {
+        font-size: 80%;
+    }
+    .gridPadreInicio {
+        display: grid;
+        grid-template-areas: 
+        "div2I"
+        "parrafoInicio";
+        /* display: flex;
+        justify-content: space-around; */
+        margin-bottom: 5rem;
+    }
+}
