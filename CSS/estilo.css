@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Titulos;
+    src: url('../Fuentes/adrip1.ttf');
+    font-weight: bold;
+}
+
+/*----------------------BODY------------------------*/
+
+body {
+    background-image: url(https://duki.com.ar/wp-content/uploads/2022/03/DUKI_YST_1920x1080.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 2.5rem;
+} */
+
+
+/* HEADER */
+
+/* 
+a {
+    text-decoration: none;
+    color: rgb(255, 252, 80);
+}
+
+nav {
+    text-align: center;
+} */
+.enlaces1{
+    grid-area: nav;
+}
+
+.tituloPrincipal {
+    color: rgb(207, 97, 97);
+    text-transform: uppercase;
+    
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-style: oblique;
+    font-family: Titulos;
+    font-size: 6.25rem;
+    text-shadow: 2px 7px rgb(231, 140, 3);
+}
+.tituloPrincipal:hover {
+    transform: rotate(360deg);
+    transition: 2.5s;
+}
+
+.tituloContacto {
+    text-align: center;
+    color: rgb(223, 57, 181);
+    text-transform: uppercase;
+    margin-left: 4.375rem;
+    margin-bottom: 0px;
+    font-style: oblique;
+    font-family: Titulos;
+    font-size: 6.25rem;
+}
+
+
+/*MAIN*/
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subInicio {
+    color: rgb(214, 71, 71);
+    margin-left: 4.6875rem;
+    text-shadow: 0.1rem 0.1rem rgb(190, 149, 66);
+}
+.subtituloInicio2 {
+    color: antiquewhite;
+}
+.subtituloHistoria {
+    color: aquamarine;
+}
+.parrafoInicio {
+    color: bisque;
+}
+.parrafoContacto{
+    background-color: bisque;
+}
+.parrafoHistoria{
+    color: aqua;
+}
+.dukiVideo {
+    margin-left: 350px;
+}
+.formulario {
+    color: antiquewhite;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    grid-area: footer;
+}
+.textoFooter {
+    color: yellow;
+}
+
+
+
+/* ----------Pagina tour----------- */
+.contenedorTour {
+    text-align: center;
+    text-transform: uppercase;
+    color: aqua;
+    background: linear-gradient(to right, rgb(99, 93, 93), black);
+}
+.titulosDelTour {
+    display: flex;
+    justify-content: space-around; 
+    border-bottom: 0.06rem solid #ffffff;
+    color: blueviolet;
+}
+
+.concierto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+}
+.bottom {
+    background-color: rgb(207, 97, 97);
+    box-shadow: 0.31rem 0.4rem 0.31rem 0.07rem rgb(231, 140, 3);
+    cursor: pointer;
+    border-color: rgb(207, 97, 97);
+    border-radius: 0.31rem;
+    width: 9.4rem;
+}
+
+/* ------------------IMAGENES------------------- */
+.imgInicio {
+    grid-area: imgI;
+    align-items: center;
+}
+
+img {
+    margin: 0.625rem;
+}
+.imgContacto {
+    width: 75rem;
+    height: 43.75rem;
+    margin-left: 1.25rem;
+}
+
+
+/* -----------------MEDIA----------------------- */
+
