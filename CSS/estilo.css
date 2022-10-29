@@ -9,6 +9,8 @@ body {
     background-image: url(https://duki.com.ar/wp-content/uploads/2022/03/DUKI_YST_1920x1080.jpg);
     background-position: center;
     background-size: cover;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
 
 
@@ -80,6 +82,7 @@ h2 {
 }
 .parrafoContacto{
     background-color: bisque;
+    width: 46rem;
 }
 .parrafoHistoria{
     color: aqua;
@@ -91,7 +94,14 @@ h2 {
 }
 .formulario {
     color: antiquewhite;
+    border: 0.3rem solid black;
+    margin-right: 7rem;
+    margin-left: 1rem;
+    width: 36rem;
+    background-color: rgb(223, 57, 181);
+    border-radius: 0.7rem;
 }
+/* -------GRID----------- */
 .gridPadreInicio {
     display: grid;
     grid-template-areas: 
@@ -99,6 +109,20 @@ h2 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 5rem;
+}
+
+.gridPadreContacto {
+    display: grid;
+    grid-template-areas: 
+    "divContacto1 divContacto2";
+    display: flex;
+    align-items: center;
+}
+.gridPadreContacto2 {
+    display: grid;
+    grid-template-areas: 
+    "divContacto3 divContacto4";
+    margin-top: 4rem;
 }
 
 /* ------FOOTER------- */
@@ -161,9 +185,8 @@ img {
     margin: 0.625rem;
 }
 .imgContacto {
-    width: 75rem;
-    height: 43.75rem;
-    margin-left: 1.25rem;
+    width: 45rem;
+    height: 27rem;
 }
 
 
@@ -181,5 +204,31 @@ img {
         /* display: flex;
         justify-content: space-around; */
         margin-bottom: 5rem;
+    }
+
+    .gridPadreContacto {
+        display: grid;
+        grid-template-areas: 
+        "divContacto1"
+        "divContacto2";
+    }
+    .gridPadreContacto2 {
+        display: grid;
+        grid-template-areas: 
+        "divContacto3"
+        "divContacto4";
+        margin-top: 4rem;
+    }
+    .formulario {
+        color: antiquewhite;
+        border: 0.3rem solid black;
+        margin-right: 7rem;
+        margin-left: 1rem;
+        background-color: rgb(223, 57, 181);
+        border-radius: 0.7rem;
+    }
+    .parrafoContacto{
+        background-color: bisque;
+        
     }
 }
