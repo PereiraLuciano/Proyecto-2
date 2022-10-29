@@ -11,24 +11,11 @@ body {
     background-position: center;
     background-size: cover;
 }
-/* li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 2.5rem;
-} */
 
 
 /* HEADER */
 
-/* 
-a {
-    text-decoration: none;
-    color: rgb(255, 252, 80);
-}
 
-nav {
-    text-align: center;
-} */
 .enlaces1{
     grid-area: nav;
 }
@@ -104,7 +91,13 @@ h2 {
 }
 
 /* FOOTER */
-
+.navFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
 footer {
     text-align: center;
     grid-area: footer;
