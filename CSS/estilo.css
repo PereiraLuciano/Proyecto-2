@@ -16,6 +16,7 @@ body {
 
 /* -----------HEADER---------- */
 .navHeader {
+    color: bisque;
     background: linear-gradient(to right, rgb(32, 32, 148), rgb(57, 57, 85));
 }
 
@@ -49,6 +50,27 @@ body {
     font-size: 6.25rem;
 }
 
+.tituloPrincipalM {
+    color: rgb(207, 97, 97);
+    text-transform: uppercase;
+    
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-style: oblique;
+    font-family: Titulos;
+    font-size: 6.25rem;
+    text-shadow: 2px 7px rgb(231, 140, 3);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tituloPrincipalM:hover {
+    transform: rotate(360deg);
+    transition: 2.5s;
+}
 
 /*---------MAIN-----------*/
 h1 {
@@ -75,14 +97,20 @@ h2 {
 .subtituloHistoria {
     color: aquamarine;
 }
+.subtituloMusica{
+    grid-area: subtituloMusica;
+    color: rgb(214, 71, 71);
+    margin-left: 4.6875rem;
+    text-shadow: 0.1rem 0.1rem rgb(190, 149, 66);
+}
 .parrafoInicio {
     color: bisque;
-    grid-area: parrafoInicio;
     margin-left: 2rem;
+    grid-area: parrafoInicio;
 }
 .parrafoContacto{
     background-color: bisque;
-    width: 46rem;
+    margin-top: 1rem;
 }
 .parrafoHistoria{
     color: aqua;
@@ -98,31 +126,8 @@ h2 {
     margin-right: 7rem;
     margin-left: 1rem;
     width: 36rem;
-    background-color: rgb(223, 57, 181);
+    background: linear-gradient(to bottom, rgb(223, 57, 181),rgb(187, 0, 115), rgb(255, 0, 0));
     border-radius: 0.7rem;
-}
-/* -------GRID----------- */
-.gridPadreInicio {
-    display: grid;
-    grid-template-areas: 
-    "div2I parrafoInicio";
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 5rem;
-}
-
-.gridPadreContacto {
-    display: grid;
-    grid-template-areas: 
-    "divContacto1 divContacto2";
-    display: flex;
-    align-items: center;
-}
-.gridPadreContacto2 {
-    display: grid;
-    grid-template-areas: 
-    "divContacto3 divContacto4";
-    margin-top: 4rem;
 }
 
 /* ------FOOTER------- */
@@ -136,11 +141,33 @@ h2 {
 footer {
     text-align: center;
     grid-area: footer;
+    background: linear-gradient(to right, rgb(32, 32, 148), rgb(57, 57, 85));
+    height: 7rem;
 }
 .textoFooter {
     color: yellow;
+    margin: 2rem;
 }
 
+/* -------GRID----------- */
+.gridPadreInicio {
+    display: grid;
+    grid-template-areas: 
+    "div2I parrafoInicio";
+}
+
+.gridPadreContacto {
+    display: grid;
+    grid-template-areas: 
+    "divContacto1 divContacto2";
+}
+
+.gridPadreMusica {
+    display: grid;
+    grid-template-areas: 
+    "imagenM tituloPrincipalMusica"
+    "imagenM subtituloMusica";
+}
 
 
 /* ----------Pagina tour----------- */
@@ -181,15 +208,17 @@ footer {
     align-items: center;
 }
 
-/* img {
-    margin: 0.625rem;
-} */
 .imgContacto {
     width: 45rem;
     height: 27rem;
     margin: 0.625rem;
 }
 
+.imagenM {
+    grid-area: imagenM;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
 
 /* -------------------------------------------MEDIA--------------------------------------- */
 
@@ -202,9 +231,6 @@ footer {
         grid-template-areas: 
         "div2I"
         "parrafoInicio";
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 5rem;
     }
 
     .gridPadreContacto {
@@ -212,24 +238,5 @@ footer {
         grid-template-areas: 
         "divContacto1"
         "divContacto2";
-    }
-    .gridPadreContacto2 {
-        display: grid;
-        grid-template-areas: 
-        "divContacto3"
-        "divContacto4";
-        margin-top: 4rem;
-    }
-    .formulario {
-        color: antiquewhite;
-        border: 0.3rem solid black;
-        margin-right: 7rem;
-        margin-left: 1rem;
-        background-color: rgb(223, 57, 181);
-        border-radius: 0.7rem;
-    }
-    .parrafoContacto{
-        background-color: bisque;
-        
     }
 }
