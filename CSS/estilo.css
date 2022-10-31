@@ -181,12 +181,13 @@ footer {
     align-items: center;
 }
 
-img {
+/* img {
     margin: 0.625rem;
-}
+} */
 .imgContacto {
     width: 45rem;
     height: 27rem;
+    margin: 0.625rem;
 }
 
 
@@ -201,8 +202,8 @@ img {
         grid-template-areas: 
         "div2I"
         "parrafoInicio";
-        /* display: flex;
-        justify-content: space-around; */
+        display: flex;
+        justify-content: space-around;
         margin-bottom: 5rem;
     }
 
