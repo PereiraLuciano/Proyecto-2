@@ -16,10 +16,11 @@ body {
 
 /* -----------HEADER---------- */
 .navHeader {
-    color: bisque;
     background: linear-gradient(to right, rgb(32, 32, 148), rgb(57, 57, 85));
 }
-
+.textNav{
+    color: bisque;
+}
 .tituloPrincipal {
     color: rgb(207, 97, 97);
     text-transform: uppercase;
